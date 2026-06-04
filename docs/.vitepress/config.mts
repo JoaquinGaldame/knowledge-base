@@ -38,6 +38,10 @@ export default defineConfig({
     ],
     search: {
       provider: 'local'
+    },
+    footer: {
+      message: 'Licensed under CC BY-NC-SA 4.0',
+      copyright: 'Copyright © 2026 Joaquín Galdame'
     }
   }
 })

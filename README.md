@@ -160,9 +160,13 @@ Whenever possible, concepts are documented alongside their original references.
 
 ## License
 
-This repository is intended primarily for educational purposes.
+This repository is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
 
-Feel free to use, reference or adapt the material while providing appropriate attribution.
+You are free to read, share and adapt the content for non-commercial purposes, provided that appropriate attribution is given and derivative works are distributed under the same license.
+
+For details, see the LICENSE file or visit:
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ---
 
