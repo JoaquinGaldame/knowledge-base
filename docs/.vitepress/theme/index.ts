@@ -2,6 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+// @ts-ignore: side-effect CSS import handled by Vite
 import './style.css'
 
 export default {
