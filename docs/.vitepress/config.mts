@@ -150,11 +150,140 @@ const sidebar: DefaultTheme.SidebarItem[] = [
     text: 'Software Engineering',
     collapsed: true,
     items: [
-      { text: 'Overview', link: '/software-engineer/' },
-      { text: 'Design Patterns', link: '/software-engineer/design-patterns/' },
-      { text: 'Behavioral Patterns', link: '/software-engineer/design-patterns/behavioral/' },
-      { text: 'Creational Patterns', link: '/software-engineer/design-patterns/creational/' },
-      { text: 'Structural Patterns', link: '/software-engineer/design-patterns/structural/' }
+      { text: 'Overview', link: '/software-engineering/' },
+      { text: 'Fundamentals', link: '/software-engineering/fundamentals/' },
+      {
+        text: 'Design Patterns',
+        collapsed: true,
+        items: [
+          { text: 'Overview', link: '/software-engineering/design-patterns/' },
+          {
+            text: 'Creational',
+            collapsed: true,
+            items: [
+              { text: 'Overview', link: '/software-engineering/design-patterns/creational/' },
+              { text: 'Factory Method', link: '/software-engineering/design-patterns/creational/factory-method' },
+              { text: 'Abstract Factory', link: '/software-engineering/design-patterns/creational/abstract-factory' },
+              { text: 'Builder', link: '/software-engineering/design-patterns/creational/builder' },
+              { text: 'Singleton', link: '/software-engineering/design-patterns/creational/singleton' },
+              { text: 'Prototype', link: '/software-engineering/design-patterns/creational/prototype' }
+            ]
+          },
+          {
+            text: 'Structural',
+            collapsed: true,
+            items: [
+              { text: 'Overview', link: '/software-engineering/design-patterns/structural/' },
+              { text: 'Adapter', link: '/software-engineering/design-patterns/structural/adapter' },
+              { text: 'Facade', link: '/software-engineering/design-patterns/structural/facade' },
+              { text: 'Decorator', link: '/software-engineering/design-patterns/structural/decorator' },
+              { text: 'Composite', link: '/software-engineering/design-patterns/structural/composite' },
+              { text: 'Flyweight', link: '/software-engineering/design-patterns/structural/flyweight' },
+              { text: 'Proxy', link: '/software-engineering/design-patterns/structural/proxy' }
+            ]
+          },
+          {
+            text: 'Behavioral',
+            collapsed: true,
+            items: [
+              { text: 'Overview', link: '/software-engineering/design-patterns/behavioral/' },
+              { text: 'Strategy', link: '/software-engineering/design-patterns/behavioral/strategy' },
+              { text: 'Observer', link: '/software-engineering/design-patterns/behavioral/observer' },
+              { text: 'Command', link: '/software-engineering/design-patterns/behavioral/command' },
+              { text: 'Chain of Responsibility', link: '/software-engineering/design-patterns/behavioral/chain-of-responsibility' },
+              { text: 'Iterator', link: '/software-engineering/design-patterns/behavioral/iterator' },
+              { text: 'Mediator', link: '/software-engineering/design-patterns/behavioral/mediator' },
+              { text: 'Memento', link: '/software-engineering/design-patterns/behavioral/memento' },
+              { text: 'State', link: '/software-engineering/design-patterns/behavioral/state' },
+              { text: 'Strategy', link: '/software-engineering/design-patterns/behavioral/strategy' },
+              { text: 'Template Method', link: '/software-engineering/design-patterns/behavioral/template-method' },
+              { text: 'Visitor', link: '/software-engineering/design-patterns/behavioral/visitor' }
+            ]
+          }
+        ]
+      },
+      {
+        text: 'Software Quality',
+        collapsed: true,
+        items: [
+          { text: 'Overview', link: '/software-engineering/software-quality/' },
+          { 
+            text: 'Conceptos',
+            collapsed: true,
+            items: [
+              { text: 'Problema de Definición', link: '/software-engineering/software-quality/01-conceptos-fundacionales/01-el-problema-de-definir-calidad'}
+            ]
+          },
+          {
+            text: 'Modelos de Calidad',
+            collapsed: true,
+            items: [
+              { text: 'McCall & Boehm', link: '/software-engineering/software-quality/02-modelos-de-calidad/01-mccall-y-boehm' },
+              { text: 'ISO 9126 & Squale', link: '/software-engineering/software-quality/02-modelos-de-calidad/02-iso-9126-y-squarE' },
+            ]
+          },
+          {
+            text: 'Factores de Calidad',
+            collapsed: true,
+            items: [
+              { text: 'Factores Externos', link: '/software-engineering/software-quality/03-factores-de-calidad/02-factores-externos' },
+              { text: 'Factores Internos', link: '/software-engineering/software-quality/03-factores-de-calidad/03-factores-internos' },
+              { text: 'Relaciones y Priorización Estratégica', link: '/software-engineering/software-quality/03-factores-de-calidad/04-relaciones-y-priorizacion-estrategica' },
+            ]
+          },
+          {
+            text: 'Medición y Métricas',
+            collapsed: true,
+            items: [
+              { text: 'Fundamentos de Medición', link: '/software-engineering/software-quality/04-medicion-y-metricas/01-fundamentos-de-medicion'},
+              { text: '', link: '/software-engineering/software-quality/04-medicion-y-metricas/02-metricas-de-defectos' },
+            ]
+          },
+          {
+            text: 'Gestión de Defectos',
+            collapsed: true,
+            items: [
+              { text: 'Terminología y Relaciones Causales', link: '/software-engineering/software-quality/05-gestion-de-defectos/01-terminologia-y-relaciones-causales' },
+              { text: 'Estrategias de Tratamiento', link: '/software-engineering/software-quality/05-gestion-de-defectos/02-estrategias-de-tratamiento' },
+            ]
+          },
+          {
+            text: 'Estrategía y Gestión',
+            collapsed: true,
+            items: [
+              { text: 'Perspectiva del Proveedor', link: '/software-engineering/software-quality/06-estrategia-y-gestion/01-perspectiva-del-proveedor' },
+              { text: 'Perspectiva del Cliente', link: '/software-engineering/software-quality/06-estrategia-y-gestion/02-perspectiva-del-cliente' },
+            ]
+          },
+          {
+            text: 'Marcos de Trabajo',
+            collapsed: true,
+            items: [
+              { text: 'Taxonomía de Marcos', link: '/software-engineering/software-quality/07-marcos-de-trabajo-y-mejora-de-procesos/01-taxonomia-de-marcos' },
+              { text: 'CMM y CMMI', link: '/software-engineering/software-quality/07-marcos-de-trabajo-y-mejora-de-procesos/02-cmm-y-cmmi' },
+              { text: 'ISO 9001 y Tickit', link: '/software-engineering/software-quality/07-marcos-de-trabajo-y-mejora-de-procesos/03-iso-9001-y-tickit' },
+              { text: 'Spice ISO 15504', link: '/software-engineering/software-quality/07-marcos-de-trabajo-y-mejora-de-procesos/04-spice-iso-15504' },
+              { text: 'Otros Marcos', link: '/software-engineering/software-quality/07-marcos-de-trabajo-y-mejora-de-procesos/05-otros-marcos' },
+              { text: 'Críticas y Desafíos', link: '/software-engineering/software-quality/07-marcos-de-trabajo-y-mejora-de-procesos/06-criticas-y-desafios' },
+            ]
+          },
+          {
+            text: 'Metodos Ágiles y Calidad',
+            collapsed: true,
+            items: [
+              { text: 'Impacto de Enfoques', link: '/software-engineering/software-quality/08-metodos-agiles-y-calidad/01-impacto-de-enfoques-agiles-e-hibridos' },
+            ]
+          },
+          {
+            text: 'Referencias',
+            collapsed: true,
+            items: [
+              { text: 'Glosario Unificado', link: '/software-engineering/software-quality/09-referencias/01-glosario-unificado' },
+              { text: 'Bilbiografía Integrada', link: '/software-engineering/software-quality/09-referencias/02-bibliografía-integrada' },
+            ]
+          }
+        ]
+      }  
     ]
   },
   {
@@ -200,16 +329,9 @@ export default defineConfig({
   title: 'Joaquin Galdame Docs',
   description: 'Biblioteca tecnica personal sobre testing, arquitectura, backend, frontend y sistemas.',
   themeConfig: {
-    nav: [
+    nav: [ // NO SE TOCA NAV
       { text: 'Home', link: '/' },
       { text: 'Roadmaps', link: '/roadmaps/' },
-      { text: 'Testing', link: '/testing/' },
-      { text: 'Architecture', link: '/architecture/' },
-      { text: 'Backend', link: '/backend/' },
-      { text: 'Frontend', link: '/frontend/' },
-      { text: 'Blockchain', link: '/blockchain/' },
-      { text: 'Software Engineering', link: '/software-engineer/' },
-      { text: 'Projects', link: '/projects/' },
       { text: 'Portfolio', link: 'https://joaquingaldame.dev' }
     ],
     sidebar,
