@@ -62,7 +62,31 @@ const sidebar: DefaultTheme.SidebarItem[] = [
       { text: 'Overview', link: '/backend/' },
       { text: 'Best Practices', link: '/backend/best-practices/' },
       { text: 'Frameworks', link: '/backend/frameworks/' },
-      { text: 'Languages', link: '/backend/languages/' },
+      { text: 'Languages', link: '/backend/languages/', 
+        collapsed: true,
+        items: [
+          { text: 'Overview', link:'/backend/languages/'},
+          {
+            text: 'dotnet',
+            collapsed: true,
+            items: [
+              { text: 'Introducción', link:'/backend/languages/dotnet/' },
+              { text: 'C#', 
+                collapsed: true,
+                items: [
+                  { text: 'Fundamentos de C#', link: '/backend/languages/dotnet/csharp/fundamentals' },
+                  { text: 'Sistema de Tipos de C#', link: '/backend/languages/dotnet/csharp/type-system' },
+                  { text: 'Tipos por Valor y Referencia', link: '/backend/languages/dotnet/csharp/value-types-vs-reference-types' },
+                  { text: 'Modelo de Memoria en C#', link: '/backend/languages/dotnet/csharp/memory-model' },
+                  { text: 'Generics en C#', link: '/backend/languages/dotnet/csharp/generics' },
+                  { text: 'Boxing y Unboxing en C#', link: '/backend/languages/dotnet/csharp/boxing-unboxing' },
+                  { text: 'Delegates y Events en C#', link: '/backend/languages/dotnet/csharp/delegates-events' },
+                ]
+              },
+            ]
+          }
+        ]
+      },
       { text: 'API Design', link: '/backend/api-design/' },
       { text: 'Architecture', link: '/backend/architecture/' },
       { text: 'Patterns', link: '/backend/patterns/' },
